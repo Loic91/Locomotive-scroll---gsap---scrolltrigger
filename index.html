@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="locomotive-scroll.css">
+    <link rel="stylesheet" href="style.css">
+    <title>locomotive</title>
+</head>
+<body>
+
+    <div class="smooth-scroll" data-scroll-container>
+
+        <section>
+            <div class="text-display-0">
+                <h1 id="text-0">EXPOSITION</h1>
+            </div>
+
+            <div class="text-display-1">
+                <h1 id="text-1">D'ART</h1>
+            </div>
+
+            <div class="text-display-2">
+                <h1 id="text-2">CONTEMPORAIN</h1>
+            </div>
+
+            <div class="text-display-3">
+                <h1 id="text-3">EN LIGNE</h1>
+            </div>
+        </section>
+
+        <section>
+            <div class="text-display-4" data-scroll data-scroll-speed="-1">
+                <h1 id="text-4">DES MILLIERS D'OEUVRES D'ART</h1>
+            </div>
+            <div class="text-display-5" data-scroll data-scroll-speed="-1">
+                <h1 id="text-5">EXPOSÉES EN LIGNE</h1>
+            </div>
+
+            <div class="image_gallery" data-scroll data-scroll-speed="2">
+                <img src="images/ryan-stefan.jpg" alt="">
+            </div>
+        </section>
+
+        <section>
+            <div class="b-text">
+                <div class="content content--feature">
+                    <p class="content__breakout content__breakout--big" data-scroll data-scroll-direction="horizontal" data-scroll-speed="3" >
+                        Imaginé et réalisé en France
+                    </p>
+                    <p class="content__breakout content__breakout--medium"data-scroll data-scroll-direction="horizontal" data-scroll-speed="2" >
+                        notre créativité est l'expression d'un savoir-faire ancestral
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="bloc">
+                <h3>hello world</h3>
+            </div>
+        </section>
+
+    </div>
+    
+
+
+    
+
+    <!-- script -->
+    <script src="locomotive-scroll.min.js"></script>
+    <script>
+        const scroll = new LocomotiveScroll({
+            el: document.querySelector('[data-scroll-container]'),
+            smooth: true,
+
+            // for tablet smooth
+            tablet: { smooth: true },
+
+            // for mobile
+            smartphone: { smooth: true }
+        });
+    </script>
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/ScrollTrigger.min.js"></script>
+
+    <script src="app.js"></script>
+    <script src="code-gsap.js"></script>
+    <script src="locomotive-scrolltrigger.js"></script>
+    
+</body>
+</html>
